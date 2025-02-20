@@ -253,11 +253,11 @@
                 class="mo-optin-form-wrapper mo-has-name-email gridgum_container"
                 style="position: relative;margin-right: auto;margin-left: auto;background-color: #ffffff;border-color: #cccccc;line-height: normal;"
               ><form
-                  method="post"
                   class="mo-optin-form"
-                  id="OXWfZcDphR_sidebar_form"
+                  id="subscription_form"
                   style="margin:0;"
-                ><div class="gridgum_body"><div class="gridgum_body-inner"><div
+                >
+                  <div class="gridgum_body"><div class="gridgum_body-inner"><div
                         class="gridgum_header2"
                       >Don't miss out!</div><div
                         class="mo-optin-form-headline gridgum_headline"
@@ -265,39 +265,30 @@
                       >Subscribe To Newsletter</div><div
                         class="gridgum_body-form"
                       ><div class="mo-optin-fields-wrapper" style=""><input
-                            id="OXWfZcDphR_sidebar_name_field"
                             class="mo-optin-field mo-optin-form-name-field gridgum_input_field"
                             style="color: #181818;background-color: #ffffff;height: auto;font-family: Palatino Linotype, Book Antiqua, serif;"
                             type="text"
                             placeholder="Enter your name here..."
-                            name="mo-name"
+                            name="name"
                             value=""
                             autocomplete="on"
                           />
                           <input
-                            id="OXWfZcDphR_sidebar_email_field"
                             class="mo-optin-field mo-optin-form-email-field gridgum_input_field"
                             style="color: #181818;background-color: #ffffff;height: auto;font-family: Palatino Linotype, Book Antiqua, serif;"
                             type="email"
                             placeholder="Enter your email address here..."
-                            name="mo-email"
+                            name="email"
                             value=""
                             autocomplete="on"
                           />
                           <input
-                            id="OXWfZcDphR_sidebar_submit_button"
                             class="mo-optin-form-submit-button gridgum_submit_button"
                             style="background: #584632;color: #ffffff;height: auto;text-shadow: none;font-family: 'Open Sans', Helvetica, Arial, sans-serif;"
                             type="submit"
                             value="Subscribe Now"
                           />
-                        </div><input
-                          id="OXWfZcDphR_sidebar_cta_button"
-                          class="mo-optin-form-cta-button gridgum_submit_button"
-                          style="background: #0073b7;color: #ffffff;height: auto;text-shadow: none;font-family: 'Open Sans', Helvetica, Arial, sans-serif;display: none;"
-                          type="submit"
-                          value="Take Action Now!"
-                        />
+                        </div>
                       </div><div
                         class="mo-optin-form-note gridgum_note"
                         style="color: #000000;font-family: 'Open Sans', Helvetica, Arial, sans-serif;"
@@ -309,10 +300,25 @@
                           /><span class="mo-note-content"><span>I have read and
                               accept the Privacy Policies</span></span></label></div><div
                         class="mo-optin-error"
-                      >Invalid email address</div></div></div></form><div
-                  class="mo-optin-success-msg"
-                  style="display:none"
-                >Thanks for subscribing!</div></div></div></div>
+                      >Invalid email address</div></div></div>
+                </form>
+
+                <div
+                  style="color: green;"
+                  id="success-alert"
+                  class="alert-msg hidden"
+                >
+                  <i class="fa fa-check-circle"></i>
+                  Thanks for subscribing!</div>
+                <div
+                  style="color: red;"
+                  id="error-alert"
+                  class="alert-msg hidden"
+                >
+                  <i class="fa fa-warning"></i>
+                  An error occured. Please try again later!</div>
+
+              </div></div></div>
           <script type="text/javascript">jQuery(function(){if(typeof
             WebFont!=='undefined'){WebFont.load({google: {families: ['Open
             Sans:400,700',]}});}});</script></aside>

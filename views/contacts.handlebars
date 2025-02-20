@@ -180,7 +180,6 @@
 
                                   </div>
                                 </div>
-                                {{! geral@jlmpanel.com and Jose.miguel@jlmpanel.com }}
                               </div></div></div></div></div></div></div></div><div
                   class="vc_row wpb_row vc_row-fluid"
                 ><div class="wpb_column vc_column_container vc_col-sm-12"><div
@@ -208,7 +207,6 @@
                           <form
                             id="contact-form"
                             class="wpcf7-form init"
-                            novalidate="novalidate"
                             data-status="init"
                           >
                             <div class="row">
@@ -216,6 +214,7 @@
                                 <div><span
                                     class="wpcf7-form-control-wrap your-name"
                                   ><input
+                                      required
                                       type="text"
                                       name="name"
                                       value=""
@@ -223,11 +222,12 @@
                                       class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                       aria-required="true"
                                       aria-invalid="false"
-                                      placeholder="Your name"
+                                      placeholder="Your name*"
                                     /></span></div>
                                 <div><span
                                     class="wpcf7-form-control-wrap your-address"
                                   ><input
+                                      required
                                       type="text"
                                       name="location"
                                       value=""
@@ -235,13 +235,14 @@
                                       class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                       aria-required="true"
                                       aria-invalid="false"
-                                      placeholder="Adress"
+                                      placeholder="Address*"
                                     /></span></div>
                               </div>
                               <div class="col-md-3">
                                 <div><span
                                     class="wpcf7-form-control-wrap your-email"
                                   ><input
+                                      required
                                       type="email"
                                       name="email"
                                       value=""
@@ -249,7 +250,7 @@
                                       class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                                       aria-required="true"
                                       aria-invalid="false"
-                                      placeholder="Email"
+                                      placeholder="Email*"
                                     /></span></div>
                                 <div><span
                                     class="wpcf7-form-control-wrap subject"
@@ -268,28 +269,52 @@
                                 <div><span
                                     class="wpcf7-form-control-wrap your-message"
                                   ><textarea
+                                      required
                                       name="message"
                                       cols="40"
                                       rows="10"
                                       class="wpcf7-form-control wpcf7-textarea"
                                       aria-invalid="false"
-                                      placeholder="Message"
+                                      placeholder="Message*"
                                     ></textarea></span></div>
                                 <div>
 
                                 </div>
-                                <div><input
+                                <div
+                                  style="display:flex; align-items:center; gap:4px"
+                                ><input
                                     type="submit"
                                     value="Submit"
                                     class="wpcf7-form-control has-spinner wpcf7-submit"
-                                  /></div>
+                                  />
+                                  <img
+                                    class="hidden"
+                                    src="/loading.gif"
+                                    alt="Loading..."
+                                    style="width: 32px;"
+                                    id="loading-elt"
+                                  />
+                                </div>
                               </div>
                             </div>
                             <div
                               class="wpcf7-response-output"
                               aria-hidden="true"
                             ></div></form></div>
-                          {{> alert}}
+                        <div
+                          style="color: green;"
+                          id="success-alert"
+                          class="alert-msg hidden"
+                        >
+                          <i class="fa fa-check-circle"></i>
+                          Message successfully sent!</div>
+                        <div
+                          style="color: red;"
+                          id="error-alert"
+                          class="alert-msg hidden"
+                        >
+                          <i class="fa fa-warning"></i>
+                          An error occured. Please try again later!</div>
                         <div class="vc_empty_space" style="height: 32px"><span
                             class="vc_empty_space_inner"
                           ></span></div></div></div></div></div>
@@ -302,3 +327,7 @@
     </div>
   </div>
 </div>
+
+webmail: link: https://server340.web-hosting.com:2096 email: geral@jlmpanel.com
+pass: !QAZxcvbnm,./ webmail: link: https://server340.web-hosting.com:2096 email:
+jose.migueldasilva@jlmpanel.com pass: !QAZxcvbnm,./
