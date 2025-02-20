@@ -1,0 +1,30 @@
+<div id="content" class="site-content">
+  <div
+    class="big-title"
+    style="background-image: url('https://www.jlm.com.pt/wp-content/uploads/2023/07/sobrenos.webp')"
+  >
+    <div class="container">
+      <div class="row middle">
+        <div class="col-md-8">
+          <h1 class="entry-title" itemprop="headline">News</h1>
+          <h3>José Luis madeiras information and events.</h3>
+        </div>
+        <div class="col-md-4 end">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="grid-masonry">
+      {{#each items}}
+        <a href="{{path}}" class="grid-item">
+          <img src="{{image}}" alt="{{title}}" />
+          <div class="grid-overlay">
+            <small>{{date}}</small>
+            <h3>{{title}}</h3>
+          </div>
+        </a>
+      {{/each}}
+    </div>
+  </div>
+</div>
