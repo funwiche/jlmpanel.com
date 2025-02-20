@@ -240,50 +240,16 @@
                             ></p>
                             <ul></ul></div>
                           <form
-                            action="/jlm-en/#wpcf7-f1176-p1076-o1"
-                            method="post"
+                            id="contact-form"
                             class="wpcf7-form init"
                             novalidate="novalidate"
                             data-status="init"
                           >
-                            <div style="display: none;">
-                              <input type="hidden" name="_wpcf7" value="1176" />
-                              <input
-                                type="hidden"
-                                name="_wpcf7_version"
-                                value="5.5.6.1"
-                              />
-                              <input
-                                type="hidden"
-                                name="_wpcf7_locale"
-                                value="en_US"
-                              />
-                              <input
-                                type="hidden"
-                                name="_wpcf7_unit_tag"
-                                value="wpcf7-f1176-p1076-o1"
-                              />
-                              <input
-                                type="hidden"
-                                name="_wpcf7_container_post"
-                                value="1076"
-                              />
-                              <input
-                                type="hidden"
-                                name="_wpcf7_posted_data_hash"
-                                value=""
-                              />
-                              <input
-                                type="hidden"
-                                name="_wpcf7_recaptcha_response"
-                                value=""
-                              />
-                            </div>
                             <div><span
                                 class="wpcf7-form-control-wrap your-name"
                               ><input
                                   type="text"
-                                  name="your-name"
+                                  name="name"
                                   value=""
                                   size="40"
                                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -295,7 +261,7 @@
                                 class="wpcf7-form-control-wrap your-email"
                               ><input
                                   type="email"
-                                  name="your-email"
+                                  name="email"
                                   value=""
                                   size="40"
                                   class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
@@ -306,7 +272,7 @@
                             <div><span
                                 class="wpcf7-form-control-wrap your-message"
                               ><textarea
-                                  name="your-message"
+                                  name="message"
                                   cols="40"
                                   rows="10"
                                   class="wpcf7-form-control wpcf7-textarea"
@@ -322,7 +288,10 @@
                             <div
                               class="wpcf7-response-output"
                               aria-hidden="true"
-                            ></div></form></div></div></div></div></div><div
+                            ></div></form></div>
+                                                      {{> alert}}
+
+                            </div></div></div></div><div
                   data-vc-full-width="true"
                   data-vc-full-width-init="false"
                   data-vc-parallax="1.5"
