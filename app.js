@@ -206,7 +206,8 @@ app.get("/edge_glued_panels", (req, res) => {
   res.render("products/edge_glued_panels", {
     layout: false,
     path: "/edge_glued_panels",
-    title: "Cherry Full Length Panels & Worktops",
+    title: "Cherry Triply three-layer panels",
+    desc: "Cherry Triply three-layer panels & worktops are available in a wide range of constructions, sizes & thicknesses.",
   });
 });
 app.get("**", async (req, res) => {
