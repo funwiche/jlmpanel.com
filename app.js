@@ -215,9 +215,7 @@ app.get("**", async (req, res) => {
 });
 
 const port = process.env.PORT || 3001;
-module.exports = app; // Export for Vercel
-if (require.main === module)
-  app.listen(port, () => console.log(`http://localhost:${port}`));
+app.listen(port, () => console.log(`http://localhost:${port}`));
 
 // nutrivegagricola.com
 // francealigrain.com
